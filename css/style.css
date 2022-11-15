@@ -1,0 +1,226 @@
+body {
+    font-family: "Roboto", "Raleway", "sans-serif";
+    color:black;
+}
+.link:hover{
+    color: #2196F3;   
+}
+.btn-elemento:focus,.btn-elemento:hover{
+    color: white;
+    background: #2196F3;
+}
+.listas:hover{
+    cursor: pointer;
+    background-color: #2196F3;
+}
+.btn-principal:hover {
+    cursor: pointer;
+    background-color: #2196F3;
+}
+:root{
+    --color-principal: #757575;
+    --color-lineas: #212121;
+    --fuente-principal: 'Roboto';
+    } 
+
+a {text-decoration: none;
+
+}
+li {
+    list-style: none;
+  }
+
+  .web {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+
+}
+
+.estudio {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.word {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-lineas);
+}
+
+.telephon {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-principal);
+}
+.titulo-principal {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+.btn-principal {
+    cursor: pointer;
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #2196F3;
+    color: var(--color-lineas);
+}
+.fondo {
+    background: #2F303A;
+}
+.features {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-lineas);
+}
+.paragraph {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--color-principal);
+}
+.Subtitle {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-lineas);     
+}
+.name {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-lineas);
+}
+.position {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-principal);
+}
+.location {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.email {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.tel {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.siss {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-principal);
+}
+
+.listas {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-lineas);
+
+}
+.prayer {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--color-lineas);
+}
+.paragr {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--color-principal);
+}
+.red-social {
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}

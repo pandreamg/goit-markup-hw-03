@@ -1,226 +1,74 @@
-body {
-    font-family: "Roboto", "Raleway", "sans-serif";
-    color:black;
-}
-.link:hover{
-    color: #2196F3;   
-}
-.btn-elemento:focus,.btn-elemento:hover{
-    color: white;
-    background: #2196F3;
-}
-.listas:hover{
-    cursor: pointer;
-    background-color: #2196F3;
-}
-.btn-principal:hover {
-    cursor: pointer;
-    background-color: #2196F3;
-}
 :root{
     --color-principal: #757575;
     --color-lineas: #212121;
-    --fuente-principal: 'Roboto';
-    } 
-
-a {text-decoration: none;
-
+    --font-principal: 'Roboto';
+    --font-secundario: 'Raleway';
+ } 
+body {
+    font-family: var(--font-principal);
+    font-family: var(--font-secundario);
+}
+a {
+    text-decoration: none;
 }
 li {
     list-style: none;
-  }
-
-  .web {
-    font-family: 'Raleway';
-    font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: calc(1600px - 430px);
+    margin: 0 auto;
+}
+img {
+    max-width: 100%
+}
+.head {
+    margin-bottom: 106px;
+}
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-web {
+    font-family: "Releway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    text-align: right;
     letter-spacing: 0.03em;
     color: #2196F3;
-
 }
-
-.estudio {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #2196F3;
-}
-
-.word {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--color-lineas);
-}
-
-.telephon {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--color-principal);
-}
-.titulo-principal {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    }
-.btn-principal {
-    cursor: pointer;
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
+/* Lista de Navegación */
+.head-nav {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    background: #2196F3;
-    color: var(--color-lineas);
+    margin-left: 93 px;
+    margin-right: auto;
 }
-.fondo {
-    background: #2F303A;
+.head-options {
+    display: flex;
+    gap: 50px;
+    padding: 0;
 }
-.features {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-lineas);
-}
-.paragraph {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--color-principal);
-}
-.Subtitle {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-lineas);     
-}
-.name {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-lineas);
-}
-.position {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-principal);
-}
-.location {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-.email {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.tel {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.siss {
-    font-family: var(--fuente-principal);
-    font-style: normal;
+.link-nav {
+    font-style: "normal";
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: var(--color-principal);
+    color:#212121
 }
-
-.listas {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-lineas);
-
+/* Información de contacto */
+.head-contact {
+    display: flex;
+    gap: 50px;
 }
-.prayer {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: var(--color-lineas);
-}
-.paragr {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: var(--color-principal);
-}
-.red-social {
-    font-family: var(--fuente-principal);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-}
+.background-

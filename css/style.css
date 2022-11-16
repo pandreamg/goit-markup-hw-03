@@ -29,15 +29,15 @@ li {
 img {
     max-width: 100%
 }
-.head {
+.header {
     margin-bottom: 106px;
 }
-.head-container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.head-web {
+.header-web {
     font-family: "Releway";
     font-weight: 700;
     font-size: 26px;
@@ -45,7 +45,7 @@ img {
     color: #2196F3;
 }
 /* Lista de Navegación */
-.head-nav {
+.header-nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ img {
     margin-left: 93 px;
     margin-right: auto;
 }
-.head-options {
+.header-options {
     display: flex;
     gap: 50px;
     padding: 0;
@@ -67,7 +67,7 @@ img {
     color:#212121
 }
 /* Información de contacto */
-.head-contact {
+.header-contact {
     display: flex;
     gap: 50px;
 }

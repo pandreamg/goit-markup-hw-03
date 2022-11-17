@@ -19,62 +19,246 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-
-
 a {
     text-decoration: none;
 }
-li {
-    list-style: none;
-}
-.container {
-    width: 100%;
-    max-width: calc(1600px - 430px);
-    margin: 0 auto;
-}
-img {
-    max-width: 100%
-}
-.header {
-    margin-bottom: 106px;
-}
-.header-container {
+/*--------index--------*/
+/*----- Header----*/
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
+    padding: 0 calc((100% - 1200px) / 2);
 }
-.header-web {
-    font-family: "Releway";
+header nav {
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+header nav .web{
+    font-family: var(--font-secundario), sans-serif;
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #2196F3; 
+}
+.web {   
+    font-family: var(--font-secundario), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
     color: #2196F3;
 }
-/* Lista de Navegación */
-.header-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 93 px;
-    margin-right: auto;
+.web-black {
+    color: #000000;
 }
-.header-options {
-    display: flex;
-    gap: 50px;
-    padding: 0;
+.web-white {
+    color: #FFFFFF
 }
-.link-nav {
-    font-style: "normal";
+  /*--lista de navegacion--*/
+header nav .nav-options {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+header nav .nav-options .link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4;
     letter-spacing: 0.02em;
-    color:#212121
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #212121;
 }
-/* Información de contacto */
+  /*--informacion de contacto--*/
 .header-contact {
+    list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 80px;
 }
-.background-
+.header-contact .email .tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-principal);
+}
+   /*-caracteristicas-*/
+.nav-options .link:hover,
+.nav-options .link:focus,
+.nav-options .link.selected,
+.nav-contact .email.tel:hover,
+.nav-contact .email.tel:focus {
+    color: #2196f3;
+}
+/*-----titulo principal-----*/
+.fondo {
+    background-color: var(--color-lineas);
+    padding: 0 calc((100% - 1200px) / 2);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.fondo .titulo-principal {
+    width: 700px;
+    margin: 20px auto;
+    font-size: 44px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+.btn-principal {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    outline: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.btn-principal:hover {
+    background-color: #188ce8;
+}
+/*--primera seccion--*/
+.subtitle {
+    padding: 94px 0;
+}
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.features-item {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display:flex;
+}
+.features-item li {
+    list-style: none;
+    width: 240px;
+}
+.features-item li .features-subtitle {
+    height: 50px;
+    text-transform: uppercase;
+    color: #212121;
+}
+/*-- segunda seccion --*/
+.subtitle > h2 {
+    color: var(--color-lineas);
+    font-size: 32px;
+    font-weight: 700px;
+    padding: 30px 0;
+    text-align:center ;
+}
+.pading {
+    padding-top: 0;
+}
+.do .container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.do .container ul li{
+    list-style: none;
+    width: 360px;
+}
+/*-- tercera seccion --*/
+.section-workgroup {
+    background-color: #f5f4fa;
+}
+.workgroup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.workgroup li {
+    background-color: #FFFFFF;
+    text-align: center;
+    list-style: none;
+}
+.workgroup li h3 {
+    margin: 20px 0 10 px 0;    
+}
+.workgroup li p {
+    margin-bottom: 30px;
+}
+/*--------portafolio--------*/
+.botones .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.botones .option li button{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #212121; 
+    line-height: 1.4px;
+    font-size: 16px;
+    font-weight: 700px;
+    letter-spacing: 0.02em;
+    padding: 10px 30px;
+    text-decoration: none;  
+    text-transform: capitalize;
+}
+.botones .option li button:hover,
+
+.botones .option li .button.selected{
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+.botones .services {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+.botones .services li {
+    list-style: none;
+    margin-bottom: 20px;
+    width: 360px;
+}
+.botones .services li a h3 {
+    color: #212121;
+    padding: 15px;
+}
+.botones .services li a p {
+    color: #757575;
+    font-size: 16px;
+    padding: 15px;
+}
+/*--Footer--*/
+footer {
+    padding: 94px; cal((100% - 1200px) / 2);
+    background-color: #21303a;
+}
+address ul {
+    list-style: none;
+}
+adres .location, .email, .tel{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+    color: #ffffff99;
+}
+address .location, .email:hover, .tel:hover, .red-social:hover {
+    color: #FFFFFF;
+}

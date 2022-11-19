@@ -1,8 +1,13 @@
+@import url(<link rel="stylesheet" href="css/moder-normalize.css">);
+
 :root{
-    --color-principal: #757575;
-    --color-lineas: #212121;
     --font-principal: 'Roboto';
     --font-secundario: 'Raleway';
+    --background-principal: #FFFFFF;
+    --color-principal: #FFFFFF;
+    --color-secundario: #212122;
+    --color-terciario:#2196F3;
+    --color-cuarto:#757575;    
  } 
 *,
 *::before,
@@ -12,12 +17,16 @@
   margin: 0;
 }
 body {
-    background-color: #FFFFFF;
+    background-color: var(--background-principal);
     font-family: var(--font-principal), sans-serif;
-    font-family: var(--font-secundario), sans-serif;
-    color: var(--color-principal);
+    color: var(--color-cuarto);
     font-size: 14px;
     letter-spacing: 0.03em;
+}
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 a {
     text-decoration: none;
@@ -42,7 +51,7 @@ header nav .web{
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    color: #2196F3; 
+    color: var(--color-terciario); 
 }
 .web {   
     font-family: var(--font-secundario), sans-serif;
@@ -50,13 +59,13 @@ header nav .web{
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    color: #2196F3;
+    color: var(--color-terciario);
 }
 .web-black {
     color: #000000;
 }
 .web-white {
-    color: #FFFFFF
+    color: var(--color-principal);
 }
   /*--lista de navegacion--*/
 header nav .nav-options {
@@ -71,7 +80,7 @@ header nav .nav-options .link {
     letter-spacing: 0.02em;
     text-decoration: none;
     text-transform: capitalize;
-    color: #212121;
+    color: var(--color-terciario);
 }
   /*--informacion de contacto--*/
 .header-contact {
@@ -79,25 +88,26 @@ header nav .nav-options .link {
     display: flex;
     gap: 80px;
 }
-.header-contact .email .tel {
+.header-contact .contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--color-principal);
+    color: var(--color-cuarto);
+    text-decoration: none;
 }
    /*-caracteristicas-*/
 .nav-options .link:hover,
 .nav-options .link:focus,
 .nav-options .link.selected,
-.nav-contact .email.tel:hover,
-.nav-contact .email.tel:focus {
-    color: #2196f3;
+.header-contact .contact:hover,
+.header-contact .contact:focus {
+    color: var(--color-terciario);
 }
 /*-----titulo principal-----*/
 .fondo {
-    background-color: var(--color-lineas);
+    background-color: #212121;
     padding: 0 calc((100% - 1200px) / 2);
     text-align: center;
     padding-top: 80px;
@@ -107,20 +117,18 @@ header nav .nav-options .link {
     width: 700px;
     margin: 20px auto;
     font-size: 44px;
-    color: #FFFFFF;
+    color: var(--color-principal);
     text-transform: capitalize;
 }
 .btn-principal {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
     outline: none;
     text-transform: capitalize;
     padding: 10px 20px;
     font-family: var(--font-principal);
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
     border-radius: 4px;
     border: none;
 }
@@ -128,15 +136,8 @@ header nav .nav-options .link {
     background-color: #188ce8;
 }
 /*--primera seccion--*/
-.subtitle {
+.section {
     padding: 94px 0;
-}
-.container {
-    padding: 0 15px;
-    max-width: 1200px;
-    margin: 0 auto; 
-    margin-top: 30px;
-    margin-bottom: 40px;
 }
 .features-item {
     flex-wrap: wrap;
@@ -151,11 +152,11 @@ header nav .nav-options .link {
 .features-item li .features-subtitle {
     height: 50px;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--color-terciario);
 }
 /*-- segunda seccion --*/
-.subtitle > h2 {
-    color: var(--color-lineas);
+.section > h2 {
+    color: var(--color-terciario);
     font-size: 32px;
     font-weight: 700px;
     padding: 30px 0;
@@ -168,7 +169,7 @@ header nav .nav-options .link {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
 }
 .do .container ul li{
     list-style: none;
@@ -185,7 +186,7 @@ header nav .nav-options .link {
     align-items: flex-end;
 }
 .workgroup li {
-    background-color: #FFFFFF;
+    background-color: var(--background-principal);
     text-align: center;
     list-style: none;
 }
@@ -202,12 +203,13 @@ header nav .nav-options .link {
     justify-content: center;
     gap: 15px;
     margin-bottom: 50px;
+    list-style: none;
 }
 .botones .option li button{
     border-radius: 4px;
     border: none;
     outline: none;
-    color: #212121; 
+    color: var(--color-terciario); 
     line-height: 1.4px;
     font-size: 16px;
     font-weight: 700px;
@@ -219,7 +221,7 @@ header nav .nav-options .link {
 .botones .option li button:hover,
 
 .botones .option li .button.selected{
-    color: #FFFFFF;
+    color: var(--color-principal);
     background-color: #2196F3;
 }
 .botones .services {
@@ -233,11 +235,11 @@ header nav .nav-options .link {
     width: 360px;
 }
 .botones .services li a h3 {
-    color: #212121;
+    color: var(--color-terciario);
     padding: 15px;
 }
 .botones .services li a p {
-    color: #757575;
+    color: var(--color-cuarto);
     font-size: 16px;
     padding: 15px;
 }
@@ -249,7 +251,7 @@ footer {
 address ul {
     list-style: none;
 }
-adres .location, .email, .tel{
+.adres .location, .email, .tel{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -260,5 +262,5 @@ adres .location, .email, .tel{
     color: #ffffff99;
 }
 address .location, .email:hover, .tel:hover, .red-social:hover {
-    color: #FFFFFF;
+    color: var(--color-principal);
 }

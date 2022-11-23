@@ -140,7 +140,6 @@ header nav .nav-options {
    /*-caracteristicas-*/
 .nav-options .link:hover,
 .nav-options .link:focus,
-.nav-options .link.selected,
 .header-contact .contact:hover,
 .header-contact .contact:focus {
     color: #2196f3;
@@ -282,6 +281,7 @@ header nav .nav-options {
     padding: 15px;
 }
 .botones .option li button:hover,
+.botones .option li button:focus,
 
 .botones .option li button.selected {
     color: var(--color-white);
